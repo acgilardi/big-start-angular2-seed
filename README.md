@@ -176,5 +176,4 @@ npm run karma.start           # 2nd window
 ```
 
 # License
-
 MIT

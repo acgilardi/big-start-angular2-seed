@@ -1,9 +1,9 @@
 {
-  "name": "angular2-seed",
-  "version": "0.0.0",
-  "description": "Seed for Angular 2 apps",
+  "name": "big-start-angular2-seed",
+  "version": "0.0.1",
+  "description": "Enterprise ready seed for Angular 2 apps",
   "repository": {
-    "url": "https://github.com/mgechev/angular2-seed"
+    "url": "https://github.com/appmite/big-start-angular2-seed"
   },
   "scripts": {
     "build.dev": "gulp build.dev",
@@ -24,7 +24,7 @@
     "test": "gulp test",
     "tsd": "tsd"
   },
-  "author": "Minko Gechev <mgechev>",
+  "author": "Anthony Gilardi (appMite) <appmite>",
   "license": "MIT",
   "devDependencies": {
     "async": "^1.4.2",
