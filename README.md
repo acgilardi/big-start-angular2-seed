@@ -1,18 +1,18 @@
-# Pants Down Ninja
+# Big Start Angular2 Seed
 
-[![Dependency Status](https://david-dm.org/appmite/pants-down-ninja.svg)](https://david-dm.org/appmite/pants-down-ninja)
-[![devDependency Status](https://david-dm.org/appmite/pants-down-ninja/dev-status.svg)](https://david-dm.org/appmite/pants-down-ninja#info=devDependencies)
-[![Build Status](https://travis-ci.org/appmite/pants-down-ninja.png)](https://travis-ci.org/appmite/pants-down-ninja)
+[![Dependency Status](https://david-dm.org/appmite/big-start-angular2-seed.svg)](https://david-dm.org/appmite/big-start-angular2-seed)
+[![devDependency Status](https://david-dm.org/appmite/big-start-angular2-seed/dev-status.svg)](https://david-dm.org/appmite/big-start-angular2-seed#info=devDependencies)
+[![Build Status](https://travis-ci.org/appmite/big-start-angular2-seed.png)](https://travis-ci.org/appmite/big-start-angular2-seed)
 
-An Angular 2.0 web application inspired by my childrens' creativity
-Can be used as a solid scaffolding base for angular 2.0 
+An Angular 2.0 web application seed project. Inspired by [Minko Gechev's Seed Project](https://github.com/mgechev/angular2-seed)
 
 # How to start
-**Note** This project requires node v4.x.x or higher and npm 2.14.7. See [My appMite Blog](http://appmite.com/big-start-with-angular2/) for more details about this project.
+See [My appMite Blog](http://appmite.com/big-start-with-angular2/) for more details about this project.
+**Note** This project requires node v4.x.x or higher and npm 2.14.7.
 
 ```bash
-git clone https://github.com/appmite/pants-down-ninja.git
-cd pants-down-ninja
+git clone https://github.com/appmite/big-start-angular2-seed.git
+cd big-start-angular2-seed
 npm install       # or `npm run reinstall` if you get an error
 npm start         # start with --env dev
 npm run docs      # api document for app
@@ -125,7 +125,7 @@ npm run docs      # api document for app
 
 Default application server configuration
 
-```javascript
+```javascript 
 var PORT             = 5555;
 var LIVE_RELOAD_PORT = 4002;
 var DOCS_PORT        = 4003;
@@ -174,15 +174,6 @@ npm test
 npm run build.test.watch      # 1st window
 npm run karma.start           # 2nd window
 ```
-
-# Contributing
-
-Please see the [CONTRIBUTING](https://github.com/mgechev/angular2-seed/blob/master/CONTRIBUTING.md) file for guidelines.
-
-
-# Change Log
-
-You can follow the [Angular 2 change log here](https://github.com/angular/angular/blob/master/CHANGELOG.md).
 
 # License
 
