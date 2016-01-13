@@ -22,9 +22,9 @@ gulp.task('postinstall', done =>
 // Build dev.
 gulp.task('build.dev', done =>
   runSequence('clean.dist',
-              'tslint',
-              'build.sass.dev',
-              'build.img.dev',
+              //'tslint',
+              //'build.sass.dev',
+              //'build.img.dev',
               'build.js.dev',
               'build.index',
               done));
@@ -34,7 +34,7 @@ gulp.task('build.dev', done =>
 gulp.task('build.prod', done =>
   runSequence('clean.dist',
               'clean.tmp',
-              'tslint',
+              //'tslint',
               'build.sass.dev',
               'build.img.dev',
               'build.html_css.prod',
