@@ -21,9 +21,13 @@ export function serveSPA() {
         express.static(process.cwd())
     );
 
-    server.listen(process.env.PORT, function() {
-        util.log('Listening: ', chalk.yellow('port', process.env.PORT));
-        openResource('http://localhost:' + PORT + APP_BASE + APP_DEST);
+    var usePort = PORT;
+    if(process.env.PORT) {
+      usePort = process.env.PORT;
+    }
+    server.listen(usePort, function() {
+        util.log('Listening: ', chalk.green('port', usePort));
+        openResource('http://localhost:' + usePort + APP_BASE + APP_DEST);
     });
 }
 
