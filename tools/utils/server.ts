@@ -19,7 +19,7 @@ export function serveSPA() {
     express.static(process.cwd())
   );
 
-  server.listen(PORT, () =>
+  server.listen(process.env.PORT, () =>
     openResource('http://localhost:' + PORT + APP_BASE + APP_DEST)
   );
 }
