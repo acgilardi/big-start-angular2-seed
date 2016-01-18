@@ -35,7 +35,8 @@ export function main() {
           .then(rootTC => {
             rootTC.detectChanges();
             let appDOMEl = rootTC.debugElement.componentViewChildren[0].nativeElement;
-            expect(DOM.querySelectorAll(appDOMEl, 'section > nav > a')[1].href).toMatch(/http:\/\/localhost:\d+\/about/);
+            expect(DOM.querySelectorAll(appDOMEl, 'section > nav > a')[1].href)
+                .toMatch(/http:\/\/localhost:\d+\/about/);
           });
       }));
   });
