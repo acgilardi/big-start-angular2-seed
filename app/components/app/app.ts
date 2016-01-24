@@ -5,8 +5,8 @@ import {
 } from 'angular2/router';
 // import {HTTP_PROVIDERS} from 'angular2/http';
 
-import {HomeCmp} from '../home/home';
-import {AboutCmp} from '../about/about';
+import {HomeComponent} from '../home/home';
+import {AboutComponent} from '../about/about';
 import {NameList} from '../../services/name_list';
 
 @Component({
@@ -18,7 +18,7 @@ import {NameList} from '../../services/name_list';
   directives: [ROUTER_DIRECTIVES]
 })
 @RouteConfig([
-  { path: '/', component: HomeCmp, as: 'Home' },
-  { path: '/about', component: AboutCmp, as: 'About' }
+  { path: '/', component: HomeComponent, as: 'Home' },
+  { path: '/about', component: AboutComponent, as: 'About' }
 ])
-export class AppCmp {}
+export class AppComponent {}

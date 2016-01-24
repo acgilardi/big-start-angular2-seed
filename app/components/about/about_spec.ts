@@ -7,7 +7,7 @@ import {
 } from 'angular2/testing_internal';
 import {Component, View} from 'angular2/core';
 import {DOM} from 'angular2/src/platform/dom/dom_adapter';
-import {AboutCmp} from './about';
+import {AboutComponent} from './about';
 import {NameList} from '../../services/name_list';
 
 export function main() {
@@ -42,5 +42,5 @@ export function main() {
 }
 
 @Component({providers: [NameList], selector: 'test-cmp'})
-@View({directives: [AboutCmp]})
+@View({directives: [AboutComponent]})
 class TestComponent {}

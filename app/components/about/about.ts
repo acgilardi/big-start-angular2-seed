@@ -6,7 +6,7 @@ import {NameList} from '../../services/name_list';
   selector: 'about',
   templateUrl: './components/about/about.html'
 })
-export class AboutCmp {
+export class AboutComponent {
   constructor(public list: NameList) {}
  /*
  * @param newname  any text as input.
