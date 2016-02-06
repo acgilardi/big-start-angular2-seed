@@ -32,7 +32,8 @@ gulp.task('build.dev', done =>
 // --------------
 // Build prod.
 gulp.task('build.prod', done =>
-    runSequence('clean.dist',
+    runSequence(
+        'clean.dist',
         'clean.tmp',
         'tslint',
         'build.sass.dev',
@@ -67,8 +68,15 @@ gulp.task('test', done =>
 
 // --------------
 // Serve.
-gulp.task('serve', done =>
-    runSequence('build.dev',
+gulp.task('serve.prod', done =>
+    runSequence(
+        'build.prod',
+        'server.start',
+        done));
+
+gulp.task('serve.dev', done =>
+    runSequence(
+        'build.dev',
         'server.start',
         'watch.serve',
         done));
